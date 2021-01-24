@@ -1,0 +1,19 @@
+段落：p标签：
+        1.前面和后面的内容都换行，p标签独占一段，上下有边距16px
+        2.align：left（默认）,center,right（文本对齐）
+换行：br（<br />单标签）
+横线：<hr  width:="" size="" color="" align="" noshade/>
+    aligi:默认center
+    noshade：无阴影（属性名属性值同值），默认有阴影
+标题标签：h1~h6
+    属性：align
+Div和span:
+    div：块标签
+    span：行内标签
+
+块标签：div，p
+    1.独占一行
+    2.块元素可以设置宽高
+行内标签：span
+    内容有多大，就有多大
+    行内元素不能设置宽高
