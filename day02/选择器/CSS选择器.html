@@ -4,18 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./CSS选择器.css">
     <style>
+        /* 通配符选择器 */
         *{
-            background: red;
+            background: palegoldenrod;
         }
+        /* 标签选择器 */
         div{
             background:blue;
+        }
+        /* 类选择器 */
+        .div2{
+            background: yellow;
+        }
+        /* ID选择器 */
+        #div2{
+            background: red;
+        }
+        /* 伪类选择器 */
+        #a:link,a:link{
+            /* 未访问过的 */
+            color: peru;
+            font-size: 12px;
+        }
+        #a:visited,a:visited{
+            /* 访问过的 */
+            color: palegreen;
+            font-size: 20px;
+        }
+        #a:hover,a:hover{
+            /* 鼠标放上 */
+            color: rosybrown;
+            font-size: 24px;
+        }
+        #a,a:active{
+            /* 鼠标激活 */
+            color: saddlebrown;
+            font-size: 30px;
+        }
+        /* 分组选择器 */
+        .div1,.div3,#a{
+            background: purple;
+        }
+        /* 后代选择器 */
+        .div4 p{
+            background: red;
         }
     </style>
 </head>
 <body>
-    <div>div</div>
+    <div class="div1">div1</div>
+    <div class="div2" id="div2" style="background: orange;">div2</div>
+    <div class="div3">
+        <p>段落一</p>
+        <div class="div4">
+            <p>段落二</p>
+            <div class="div5">
+                <p>段落四</p>
+            </div>
+        </div>
+        <p>段落五</p>
+    </div>
     <span>span</span>
     <p>p</p>
+    <a href="#">链接</a>
+    <button id="a">点击</button>
+    <!-- 元素包含 -->
+    <p><div>asvasv</div></p>
 </body>
 </html>
