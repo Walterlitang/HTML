@@ -25,12 +25,12 @@
         /* 伪类选择器 */
         #a:link,a:link{
             /* 未访问过的 */
-            color: peru;
+            color: red;
             font-size: 12px;
         }
         #a:visited,a:visited{
             /* 访问过的 */
-            color: palegreen;
+            color: blue;
             font-size: 20px;
         }
         #a:hover,a:hover{
@@ -50,6 +50,41 @@
         /* 后代选择器 */
         .div4 p{
             background: red;
+        }
+        /* 选择器优先级 */
+        .c1{
+            background: purple;
+        }
+        .c2{
+            background: aqua;
+        }
+        /* 元素转换 */
+        .div6{
+            display: inline;
+            width: 100px;
+            height: 100px;
+            background: rebeccapurple;
+        }
+        span{
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: rosybrown;
+        }
+        /* 字体 */
+        span{
+            font-family: "华文琥珀";
+            font-style: italic;
+            font-weight: bold;
+        }
+        /* 文本属性 */
+        .div7{
+            background: white;
+            text-align: center;
+            text-decoration: line-through;
+        }
+        a{
+            text-decoration: none;
         }
     </style>
 </head>
@@ -72,5 +107,9 @@
     <button id="a">点击</button>
     <!-- 元素包含 -->
     <p><div>asvasv</div></p>
+    <div class="c1 c2">c1c2</div>
+    <div class="div6">div6</div>
+    <span>行内元素</span>
+    <div class="div7">文本属性</div>
 </body>
 </html>

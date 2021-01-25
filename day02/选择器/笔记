@@ -29,6 +29,33 @@
     3.元素包含：
         块包块，块包行
         div包含p，p不能包含div（会把p补成两个）
+
+    4.CSS属性：
+        width：宽度
+        height：高度
+    
+    5.元素转换：（行转块，块转行，行内块元素）
+        display：
+            block(行元素转换为块元素)
+            inline(块元素转换为行元素)
+            inlink-block：行内块（可指定宽高，不独占一行）
+            none：不显示元素，隐藏
+
+    6.字体：
+        font-size：字体大小
+        font-family：样式
+        font-weight：bold（加粗），normal;
+        font-style：italic（倾斜），normal;
+
+    7.文本：
+        color：文本的颜色
+        text-align：位置（left，center，right）
+        text-decoration：文本线（underline下划线，overline上划线，line-through中划线,none）
+        text-index：首行缩进
+        letter-spacing：字与字之间的间距
+        word-spacing：单词之间的间距
+        line-height：行高（字在行中间位置）
+
 总结：
     1.选择器：
         基础选择器：通用，标签，类，ID，伪类
@@ -36,3 +63,4 @@
     2.优先级：
         ID > 类 > 标签 > 通配符
         行内引入 > 内嵌引入 > 外部引入
+        优先级相同后面覆盖前面的
