@@ -51,7 +51,7 @@
         color：文本的颜色
         text-align：位置（left，center，right）
         text-decoration：文本线（underline下划线，overline上划线，line-through中划线,none）
-        text-index：首行缩进
+        text-indent：首行缩进
         letter-spacing：字与字之间的间距
         word-spacing：单词之间的间距
         line-height：行高（字在行中间位置）
@@ -64,3 +64,4 @@
         ID > 类 > 标签 > 通配符
         行内引入 > 内嵌引入 > 外部引入
         优先级相同后面覆盖前面的
+    3.左右居中用text-align，上下居中用line-height
