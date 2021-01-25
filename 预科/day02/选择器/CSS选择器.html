@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS选择器.css">
+    <style>
+        /* 通配符选择器 */
+        *{
+            background: palegoldenrod;
+        }
+        /* 标签选择器 */
+        div{
+            background:blue;
+        }
+        /* 类选择器 */
+        .div2{
+            background: yellow;
+        }
+        /* ID选择器 */
+        #div2{
+            background: red;
+        }
+        /* 伪类选择器 */
+        #a:link,a:link{
+            /* 未访问过的 */
+            color: red;
+            font-size: 12px;
+        }
+        #a:visited,a:visited{
+            /* 访问过的 */
+            color: blue;
+            font-size: 20px;
+        }
+        #a:hover,a:hover{
+            /* 鼠标放上 */
+            color: rosybrown;
+            font-size: 24px;
+        }
+        #a,a:active{
+            /* 鼠标激活 */
+            color: saddlebrown;
+            font-size: 30px;
+        }
+        /* 分组选择器 */
+        .div1,.div3,#a{
+            background: purple;
+        }
+        /* 后代选择器 */
+        .div4 p{
+            background: red;
+        }
+        /* 选择器优先级 */
+        .c1{
+            background: purple;
+        }
+        .c2{
+            background: aqua;
+        }
+        /* 元素转换 */
+        .div6{
+            display: inline;
+            width: 100px;
+            height: 100px;
+            background: rebeccapurple;
+        }
+        span{
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: rosybrown;
+        }
+        /* 字体 */
+        span{
+            font-family: "华文琥珀";
+            font-style: italic;
+            font-weight: bold;
+        }
+        /* 文本属性 */
+        .div7{
+            background: yellow;
+            text-align: center;
+            text-decoration: line-through;
+            width: 200px;
+            height: 200px;
+            text-indent: 50px; /*首行缩进50px */
+            word-spacing: 20px;
+            letter-spacing: 5px;
+            line-height: 200px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">div1</div>
+    <div class="div2" id="div2" style="background: orange;">div2</div>
+    <div class="div3">
+        <p>段落一</p>
+        <div class="div4">
+            <p>段落二</p>
+            <div class="div5">
+                <p>段落四</p>
+            </div>
+        </div>
+        <p>段落五</p>
+    </div>
+    <span>span</span>
+    <p>p</p>
+    <a href="#">链接</a>
+    <button id="a">点击</button>
+    <!-- 元素包含 -->
+    <p><div>asvasv</div></p>
+    <div class="c1 c2">c1c2</div>
+    <div class="div6">div6</div>
+    <span>行内元素</span>
+    <div class="div7">文本 属性</div>
+</body>
+</html>

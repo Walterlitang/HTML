@@ -1,0 +1,13 @@
+HTML的通用属性：
+    1.name，id，class（数字，下划线，字母，首位不能是数字）
+    2.name可以重复，id不能重复
+    3.一个标签只有一个name和id，却可以有多个class
+    4..name给标签的用来后台调用的，class给CSS用的
+    5.title：标签的标题
+        <a href="#" title="这是一个链接">标题</a>
+    6.Style：标签的样式
+总结：一个标签只能有一个name，id,可以有多个class;
+    多个标签可以有相同的class和name
+
+标签的关系：
+    祖先，父子，兄弟，孩子
