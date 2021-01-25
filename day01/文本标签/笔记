@@ -31,6 +31,6 @@ HTML：Hyper text markup language(超文本标记与语言)
     上标：sup （水的化学表达式）
     下标：sub (一元二次方程)
         
-4.HTML会自动纠正一些错误的嵌套标签的方式
+4.HTML会自动纠正一些错误的嵌套标签的方式,各自补全
 
 5.font，big标签不建议使用
