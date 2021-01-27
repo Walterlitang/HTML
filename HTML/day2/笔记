@@ -1,0 +1,27 @@
+链接标签：
+    超链接：跳到其他页面
+    锚链接：本页面跳转
+  a：
+    <a><img/>文字</a>（既可以是图片链接，也可以是文字链接）
+    href：相对路径
+          绝对路径
+          即可以跳转到页面，也可以跳转到图片、音乐，也可以链接到下载等
+      假链接：
+        1.href="#"
+        2.href="javascript:viod);" 
+    target：_serf（在当前窗口打开，默认）
+            _blank（在新窗口打开）
+            希望所有的都在新窗口打开
+            <head>
+              <base target：_balnk>
+            </head>
+    title：注释
+          通用属性title
+
+
+锚链接：本页面跳转
+    1.<a href="#+id名"></a>
+        也可以是name名，但name必须是用a里的name
+        <a href="#name"></a>
+        <a href="" name="name"></a>
+

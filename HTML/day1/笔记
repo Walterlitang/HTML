@@ -1,0 +1,58 @@
+单标签：br，hr，input，img，link
+<meta charset="UTF-8">  设置字符集
+标签之间的关系：嵌套，并列（属于同一个父元素）
+
+结构标签：
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body></body>
+</html>
+
+排版标签：
+h1~h6：
+    属性：align
+br
+hr：默认占满，占满他的父元素，body
+p：前后内容换行，上下有边距，align
+<pre>：预排版标签（按照代码编写的原样输出，标签有用，内容格式原样输出）上下有边距
+blockquote：引用标签（上下左右都有边距）
+
+文本标签：
+加粗：b，strong
+斜体：i，em
+删除：del，s
+下划线：u，ins
+上标：sup
+下标：sub
+字体变大：big（115%）
+字体变下：small（85%）
+字体设置：font
+    属性：size，color，face，align
+
+列表标签：
+  ul：无序列表
+    type：square（方块）,disc(圆，默认),circle（小圆圈）
+
+  ol：有序列表
+    type：1(阿拉伯)，a(拉丁)，I(罗马)，i（小写罗马）（序号类型）
+    start：起始位置
+
+  dl：定义列表：上下边距
+    <dl>
+        <dt>定义标题</dt>
+        <dd>定义名称</dd>
+    </dl>
+
+图片标签：
+  img：
+    src：相对路径（保存在同一文件夹下）
+         绝对路径：磁盘路径，网址路径
+    width , height 
+    alt：提示内容，图片为加载出现，用于搜索引擎搜索
+    title：图片的描述，鼠标放上图片可以出现注释
+    align：（left,right）不能让图片居中
+        设置align会让文字围绕着图片，否则图片底部最后一行与文字对齐
+        （行内块，可以设置宽高，又可以和别的元素在同一行）
+    border：
