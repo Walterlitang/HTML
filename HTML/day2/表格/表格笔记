@@ -31,3 +31,12 @@ td：
     rowspan：跨行（上下）合并
     colspan：跨列（左右）合并
         {被合并的单元格要删除}
+
+表格分级：
+    table {
+        thead
+        tbody
+        tfoot
+    }
+    不写默认都是tbody
+    thead，tfoot最好出现一次
