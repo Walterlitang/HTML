@@ -1,0 +1,15 @@
+表单：（收集用户信息）
+    name：表单名称
+    action：提交的地址
+    method：提交的方法
+        GET:可见，POST:不可见
+
+文本框：
+    input：
+        name，id
+        value：文本框的值
+        maxlength：最多可输入字符数
+        size：文本框输入字符转换为文本框的宽度
+        readonly：只读（无值属性）
+        disable：禁用（无值属性）
+        type：password（密码），hidden（隐藏文本框），
