@@ -25,3 +25,8 @@
         <a href="#name"></a>
         <a href="" name="name"></a>
 
+link标签：
+  引入网页图标：<link rel="icon" href="favicon.ico">
+  一般将网页图标放到网站根目录
+
+  

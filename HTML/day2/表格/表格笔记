@@ -1,0 +1,33 @@
+表格标签：
+    table，tr，td
+    是严格嵌套关系，中间最好别出现别的标签，不会显示别的标签
+    td内可以出现别的标签
+
+table:
+    border：表格边框
+    width：表格宽度
+    height：表格高度
+    align：表格排版
+    bgcolor：表格背景颜色
+    background：设置表格背景图
+    bordercolor：border(边框)颜色
+    cellspacing：单元格与单元格之间的距离
+    cellpadding：单元格与边框之间的距离
+
+caption：表格标题
+
+tr：
+    bgcolor，background，height，align（这一行的内容排版）,valign（垂直排版）
+    没有width
+
+th：
+    加粗、居中（默认）
+    同td
+
+td：
+    width：全列宽度改变
+    height：全行宽度改变
+    align，valign
+    rowspan：跨行（上下）合并
+    colspan：跨列（左右）合并
+        {被合并的单元格要删除}
