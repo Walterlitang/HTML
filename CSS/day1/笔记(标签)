@@ -1,0 +1,148 @@
+CSS选择器：
+    基础选择器
+    关系选择器
+    属性选择器
+    伪类选择器
+    伪元素选择器
+
+关系选择器：
+    子代选择器：S1>S2（匹配S1下的S2）（一层）
+    后代选择器：S1 S2（匹配S1下的所有S2）（多层）
+    相邻选择器：S1+S2（匹配相邻S2）
+    兄弟选择器：S1~S2（匹配所有S2）
+    并集选择器：S1,S2（匹配S1和S2）
+
+属性选择器：[attr]
+    [id,width,div......]{
+        匹配所有写有该属性的标签
+    }
+    [id="d1",......]{
+        匹配id="d1"的标签
+    }
+    [id~="d1"]{
+        匹配id的值包含"d1"的标签（单词）
+    }
+    [id*="d"]{
+        匹配id的值包含字符"d"的标签（字母）
+    }
+    [id^="val"]{
+        匹配id的值开头为"val"的值
+    }
+    [id$="end"]{
+        匹配id的值结尾为"end"的值
+    }
+    
+伪类选择器：（通过:选择）S为选择器
+    S:link，S:visited，S:hover，S:active
+
+a标签自带属性字体为蓝色，div改变字体颜色改不了。
+
+E:focus
+    input:focus{
+        获得焦点的input输入框样式
+    }
+    :focus{
+        所有获得焦点的标签
+    }
+
+E：first-child：第一个子元素
+   last-child：最后一个子元素
+   only-child：元素作为父元素里唯一一个子元素选中
+   nth-child(n)：匹配第n个子元素
+        n=odd：匹配奇数个，n=even：匹配偶数个
+        2n+1：奇数，      2n：偶数
+        3n：3的倍数
+
+E：empty{
+    选择E 标签中内容为空的标签
+}
+E：checked{
+    匹配被选中的元素，用于input且type=radio或checkbox时
+}
+E：enable{
+    匹配可用的/有效的元素
+}
+E：disable{
+    匹配不可用的元素
+}
+
+
+伪元素选择器：
+    前面有两个冒号：
+        例：E::before
+    
+    E::before{
+        在一个元素的内部的前面创建一个元素
+        content:"内容",
+        border:"",//边框
+        display:"block",//改变元素的属性
+        background:"",//页面的背景色
+        ...
+    }
+    E::after{
+        在一个元素的内部的最后创建一个元素
+        content:"内容",
+        border:"",//边框
+        display:"inline",//改变元素的块行属性
+        background:"",//页面的背景色
+        ...
+    }
+
+    E::first-letter{
+        设置元素的第一个字符样式
+        font-size:""
+        ...
+    }
+    E::last-line{
+        设置元素的第一行样式
+        ...
+    }
+    E::selection{
+        被选中的文字的样式
+        ...
+    }
+    在火狐中使用
+    E::-moz-selection{
+        ...
+    }
+
+    兼容性：{
+        谷歌：-webkit-
+        火狐：-moz-
+        微软：-ms-
+        苹果：-webkit-
+        Opera(欧朋)：-o-
+    }
+
+选择器组合：（注意是紧挨在一起的，否则就成了后代选择器了）
+1.E.class
+    div.c1{
+        div中类名为c1的元素
+        ...
+    }
+2.E.id
+    div#d1{
+        div中id名为d1的元素
+        ...
+    }
+
+继承性：
+    离的最近继承谁
+    可以继承的：font，text
+    text-decoation，width，height，border不可继承
+    a标签不接受任何继承的属性
+
+优先级：
+    ID>类>标签>*
+    ID：    0，1，0，0
+    class:  0，0，15，0（没有进制这一说）
+    标签：  0，0，0，15
+    （权重比较）
+    优先级权重一样，后面的会覆盖前面的
+
+    伪元素选择器 > !important > 行内样式 > id > class > 元素 > * > 继承样式 >浏览器默认样式
+    其中伪元素又有：::first-letter > ::selection > ::first-line
+
+层叠性：
+    优先级权重一样，后面的会覆盖前面的
+    优先级高的优先级低的
