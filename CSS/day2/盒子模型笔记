@@ -1,0 +1,27 @@
+盒子：
+    由内至外：内容(content)，内边距(padding)，边框(border)，外边距(margin)
+        默认除了内容，都是0，盒子大小有内容大小决定
+
+    width，height：是内容大小
+
+    盒子所占宽：
+        margin-left + border-left + width + border-right + margin-right
+    盒子所占高：
+        margin-top + border-top + height + border-bottom + margin-bottom
+
+边框(border)：
+    solid（实线），dotted（虚线），
+
+内边距：
+    padding：10px 20px 30px 40px;(上 右 下 左)
+    padding：10px 20px 30px;(上 左右 下)
+    有些元素自带边距：如body,ul,p,h1,pre等
+    所以要清边距
+    *{
+        padding:0;
+    }
+
+外边距：
+    盒子与盒子之间的距离
+    当两个盒子上外边距，和下外边距相等和重合的话会塌陷，如果不一样大，谁大显示谁    
+    overflow：hidden阻止塌陷

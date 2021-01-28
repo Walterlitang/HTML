@@ -16,7 +16,7 @@ font：style，粗细，大小，字体
 文本属性：
     text-align
     text-decoration
-    text-indent
+    text-indent:em（代表字长）
     line-height
     letter-spacing(支持负数)
     word-spacing
