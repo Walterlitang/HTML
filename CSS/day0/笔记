@@ -1,1 +1,25 @@
-测试文件
+CSS：层叠样式表
+    将网页的结构与样式分离
+
+CSS引入：
+    行内引入 > 内嵌引入 > 外部引入
+    内联 > ID > 类 = 属性 = 伪类 =  > 标签 = 伪元素
+
+*：选择页面中的所有元素，会降低响应速度
+
+标签选择器：可以选出所有相同的标签，不能差异化选择
+类选择器：可以选择一个或多个标签，可以根据需求选择
+id选择器：不推荐使用，只能用一次
+
+属性：
+    color：字体颜色
+    font-size：字体尺寸
+    font-style：字体倾斜或正常
+    font-weight：字体加粗
+    background：背景颜色
+    border：边框
+    text-decoration：文本样式（underline，line-through，overline）下划线，中划线，下划线
+    text-align：文本排版
+    width：宽度
+    height：高度
+    line-height：行高
