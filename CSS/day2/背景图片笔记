@@ -1,0 +1,13 @@
+背景：background
+    background-color：背景颜色
+    background-image：背景图片
+    平铺：background-repat:no-repeat（不平铺），repeat-x（横向平铺），repeat-y（纵向平铺）
+    background-size：背景图大小
+    背景图自带颜色会覆盖background-color
+    背景位置：
+        background-position:水平，垂直（只写一个，另一个默认居中）
+
+
+设置多个背景图片：（要用简写格式）
+    background:color url1() no-repeat right top,（右上）
+               color url2() no-repeat left top

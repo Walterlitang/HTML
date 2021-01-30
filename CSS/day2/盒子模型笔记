@@ -10,18 +10,40 @@
         margin-top + border-top + height + border-bottom + margin-bottom
 
 边框(border)：
-    solid（实线），dotted（虚线），
+    solid（实线），dotted（虚线），dotted（点线），none（隐藏）
 
 内边距：
     padding：10px 20px 30px 40px;(上 右 下 左)
     padding：10px 20px 30px;(上 左右 下)
     有些元素自带边距：如body,ul,p,h1,pre等
-    所以要清边距
+    所以要清内边距
     *{
         padding:0;
     }
 
 外边距：
     盒子与盒子之间的距离
-    当两个盒子上外边距，和下外边距相等和重合的话会塌陷，如果不一样大，谁大显示谁    
-    overflow：hidden阻止塌陷
+    当两个盒子上外边距，和下外边距相等和重合的话会塌陷，如果不一样大，谁大显示谁
+    盒子左右不会出现塌陷
+
+    设置子盒子盒子外边距时会把父盒子一起带走这也是一种塌陷现象{
+        解决：1.给父盒子设置边框
+             2.给父盒子设置内边距，但盒子会变大
+             3.overflow：hidden
+    }
+    清除外边距
+    1.*{
+        //会给页面增加负担
+        margin:0
+    }
+    2.所有要用的标签{
+        margin:0
+    }
+
+盒子居中：{
+    //必须设置width，否则占满居中没有意义
+    margin:0 auto;
+}
+
+计算盒子长宽，浏览器显示的是border以内的
+    
